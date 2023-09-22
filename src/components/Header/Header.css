@@ -1,14 +1,42 @@
+.headerWrapper{
+  display: block;
+
+  margin-bottom: 40px;
+
+  @media (min-width: 776px) {
+    margin-bottom: 160px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .headerContainer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-bottom: 60px;
   gap: 10px;
 
   @media (min-width: 776px) {
     gap: 40px;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-bottom: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    /*flex-direction: row;*/
+    /*justify-content: flex-end;*/
+  }
+}
+
+.weatherWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  @media (min-width: 776px) {
+    justify-content: flex-start;
+    margin-bottom: 0;
   }
 }
 
@@ -30,5 +58,5 @@
   font-size: 24px;
 }
 .randomQuotePage:hover, .ImageGeneratorPage:hover {
-  transform: scale(1.1); /* Збільшуємо розмір тексту при наведенні */
+  transform: scale(1.1);
 }

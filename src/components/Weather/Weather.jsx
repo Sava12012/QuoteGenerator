@@ -79,16 +79,27 @@ const Weather = () => {
             <ToastContainer />
             <div className='weatherContainer'>
                 <div className='topBar'>
-                    <input type='text' className='cityInput' placeholder='Search' />
+                    <input
+                        type='text'
+                        className='cityInput'
+                        placeholder='Search'
+                        onKeyPress={(event) => {
+                            if (event.key === 'Enter') {
+                                search();
+                            }
+                        }}
+                    />
+
                     <div className='searchIcon' onClick={search}>
                         <img src={search_icon} alt=''/>
                     </div>
                 </div>
                 <div className='weatherImage'>
-                    <img src={wicon} alt=''/>
+                    <img src={wicon} alt='' width='64' height='64'/>
                 </div>
-                <div className='weatherTemp'>24°c</div>
-                <div className='weatherLocation'>London</div>
+
+                <div className='weatherTemp'>21°c</div>
+                <div className='weatherLocation'>Tokyo</div>
                 <div className='dataContainer'>
                     <div className='element'>
                         <img src={humidity_icon} alt='' className='iconData'/>

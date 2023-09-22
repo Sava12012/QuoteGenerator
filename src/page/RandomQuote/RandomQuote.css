@@ -24,7 +24,7 @@
 
 .line {
   width: auto;
-  height: 1.5px;
+  /*height: 1.5px;*/
   background: white;
   @media (min-width: 776px) {
     width: 680px;
@@ -44,7 +44,7 @@
   font-size: 12px;
   @media (min-width: 776px) {
     font-size: 20px;
-    font-weight: 500px;
+    /*font-weight: 400px;*/
   }
 }
 
