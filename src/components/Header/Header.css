@@ -59,4 +59,6 @@
 }
 .randomQuotePage:hover, .ImageGeneratorPage:hover {
   transform: scale(1.1);
+  color: white;
+  font-weight: bold;
 }
