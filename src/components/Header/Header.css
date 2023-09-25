@@ -1,6 +1,7 @@
-.headerWrapper{
+.headerWrapper {
   display: block;
   margin-bottom: 40px;
+  text-align: center;
   @media (min-width: 776px) {
     margin-bottom: 160px;
     display: flex;
@@ -13,7 +14,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 24px;
   gap: 10px;
 
   @media (min-width: 776px) {
@@ -35,7 +36,8 @@
   }
 }
 
-.randomQuotePage, .ImageGeneratorPage {
+.randomQuotePage,
+.home {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -48,10 +50,11 @@
 .active {
   color: white;
   font-weight: bold;
-  text-shadow: 4px 4px 29px rgba(255,255,255,0.6);
+  text-shadow: 4px 4px 29px rgba(255, 255, 255, 0.6);
   font-size: 24px;
 }
-.randomQuotePage:hover, .ImageGeneratorPage:hover {
+.randomQuotePage:hover,
+.home:hover {
   transform: scale(1.1);
   color: white;
   font-weight: bold;

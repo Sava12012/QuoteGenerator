@@ -9,19 +9,15 @@ const Header = () => {
         <Weather />
       </div>
       <div className="headerContainer">
+        <NavLink to="/" className="home" activeClassName="active">
+          Home
+        </NavLink>
         <NavLink
           to="/randomQuote"
           className="randomQuotePage"
           activeClassName="active"
         >
           Random Quote
-        </NavLink>
-        <NavLink
-          to="/imageGenerator"
-          className="ImageGeneratorPage"
-          activeClassName="active"
-        >
-          Image Generator
         </NavLink>
       </div>
     </div>

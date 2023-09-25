@@ -1,12 +1,10 @@
 :root {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,17 +16,18 @@ a {
   text-decoration: inherit;
 }
 
-
 body {
   margin: 0;
   place-items: center;
   min-width: 320px;
-  height: 100vh;
   background: #1c2238;
   background: linear-gradient(-45deg, #b581a2, #5933ad, #0b3949, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 
+  @media (min-width: 776px) {
+    height: 100vh;
+  }
 }
 @keyframes loading {
   0% {
@@ -60,4 +59,14 @@ body {
   }
 }
 
-
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
